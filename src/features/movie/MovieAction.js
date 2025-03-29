@@ -18,7 +18,7 @@ export const fetchMovieDetail = createAsyncThunk(
   async (movieId) => {
     try {
       let response = await fetch(
-        `https://api.themoviedb.org/movie/${movieId}?api_key=aacdbe83dedab8fc913bd72adf3fdbad`
+        `https://api.themoviedb.org/3/movie/${movieId}?api_key=aacdbe83dedab8fc913bd72adf3fdbad`
       );
       let json = await response.json();
       console.log(json);

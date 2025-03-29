@@ -214,7 +214,7 @@ export default function AppNavbar() {
           </ul>
         </div>
       </div>
-      <nav className="border-b">
+      <nav className="border-b ">
         <ul className="flex items-center gap-x-3 max-w-screen-xl mx-auto px-4 overflow-x-auto lg:px-8">
           {submenuNav.map((item, idx) => {
             return (
@@ -222,12 +222,12 @@ export default function AppNavbar() {
               <li
                 key={idx}
                 className={`py-1 ${
-                  idx == 0 ? "border-b-2 border-indigo-600" : ""
+                  idx == 0 ? "" : ""
                 }`}
               >
                 <Link
                   to={item.path}
-                  className="block py-2 px-3 rounded-lg text-gray-700 hover:text-gray-900 hover:bg-gray-100 duration-150"
+                  className="block py-2 px-3 rounded-lg text-gray-700 hover:text-gray-900 hover:bg-amber-300 duration-150"
                 >
                   {item.title}
                 </Link>

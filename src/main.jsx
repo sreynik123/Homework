@@ -22,7 +22,7 @@ import Upcomming from "./pages/Upcomming.jsx";
 
 import NowPlaying from "./pages/NowPlaying.jsx";
 import Moviepopular from "./pages/Moviepopular.jsx";
-import TopRate from "./pages/TopRate.jsx";
+
 import Movidetail from "./pages/MovieDetail.jsx";
 
 
@@ -63,7 +63,7 @@ const router = createBrowserRouter(
       
       {
         path:"/now-playing", 
-        element:<Upcomming/>,
+        element:<NowPlaying/>,
       },
       {
         path:"/Top-rate",

@@ -12,7 +12,7 @@ export default function People() {
   }, []);
   return (
     <div className=" bg-white py-24 sm:py-32">
-      <div className="  p-5 shadow-lg grid grid-cols-4 gap-5">
+      <div className="  p-15 shadow-lg grid grid-cols-4 gap-10">
         {data.results &&
           data.results.map((person, index) => (
             <PeopleCard
